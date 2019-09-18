@@ -11,8 +11,11 @@ import '../assets/stylesheets/application.scss';
 // State and reducers
 
 import citiesReducer from './reducers/citiesReducer.js'
+import activeCityReducer from './reducers/activeCityReducer.js'
+
 const reducers = combineReducers({
-  cities: citiesReducer
+  cities: citiesReducer, 
+  activeCity: activeCityReducer
 });
 
 // render an instance of the component in the DOM
