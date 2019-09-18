@@ -12,9 +12,20 @@ function mapDispatchToProps(dispatch) {
   );
 }
 
+function mapStateToProps(state) {
+  return {
+    cities: state.cities
+  }
+}
+
+
 class CityList extends Component {
+
+    
+  state = {
+    setCities: this.props.setCities()
+  }
 	render() {
-    console.log(this)
 		return (
 			 <div className="col-sm-7">
        {this.props.cities.map(city => <City city={city} key={city.slug} />)}
@@ -23,4 +34,4 @@ class CityList extends Component {
 	}
 }
 
-export default connect(null, mapDispatchToProps) (CityList);
+export default connect(mapStateToProps, mapDispatchToProps) (CityList);
