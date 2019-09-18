@@ -29,3 +29,9 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+
+.active-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

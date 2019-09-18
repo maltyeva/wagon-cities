@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="app row">
       <CityList />
-      <div className="col-sm-5">
+      <div className="<col-sm-7></col-sm-7>">
       <ActiveCity />
       </div>
     </div>
